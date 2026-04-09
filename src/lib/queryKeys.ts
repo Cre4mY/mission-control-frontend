@@ -8,5 +8,8 @@ export const queryKeys = {
   departmentCards: (deptId: string, limit: number) => ["department-cards", deptId, limit] as const,
   departmentSummary: ["department-summary"] as const,
   departmentStats: (deptId: string) => ["department-stats", deptId] as const,
+  departmentSummaries: ["department-summaries"] as const,
+  overviewMetrics: ["overview-metrics"] as const,
+  activityFeed: (filters: any) => ["activity-feed", filters] as const,
 };
 
